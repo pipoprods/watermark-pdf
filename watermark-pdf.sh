@@ -13,7 +13,7 @@ watermark_text="$1"
 original_pdf=$2
 
 color="rgba(212,212,212,0.4)"
-font_size=24
+font_size=12
 
 size="$(pdfinfo "$original_pdf" | grep "Page size:" | sed 's/Page size:[ ]*\([0-9]\+\)\([\.][0-9]\+\)\? x \([0-9]\+\)\([\.][0-9]\+\)\? pts.*/\1x\3/')"
 
